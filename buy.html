@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buy Properties - Blossom Estates</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/1670/1670080.png">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="logo">
+            <h1>Blossom Estates</h1>
+        </div>
+        <div class="nav-links">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="buy.html" class="active">Buy</a></li>
+                <li><a href="sell.html">Sell</a></li>
+                <li><a href="rent.html">Rent</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Buy Properties</h1>
+            <p>Find your dream home in Makerere and surrounding areas</p>
+        </div>
+    </section>
+
+    <!-- Property Search -->
+    <section class="property-search">
+        <div class="container">
+            <div class="search-container">
+                <form class="search-form">
+                    <div class="form-group">
+                        <label for="location">Location</label>
+                        <select id="location">
+                            <option value="">All Locations</option>
+                            <option value="makerere">Makerere</option>
+                            <option value="kampala">Kampala</option>
+                            <option value="entebbe">Entebbe</option>
+                            <option value="jinja">Jinja</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="property-type">Property Type</label>
+                        <select id="property-type">
+                            <option value="">All Types</option>
+                            <option value="house">House</option>
+                            <option value="apartment">Apartment</option>
+                            <option value="villa">Villa</option>
+                            <option value="land">Land</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="bedrooms">Bedrooms</label>
+                        <select id="bedrooms">
+                            <option value="">Any</option>
+                            <option value="1">1+</option>
+                            <option value="2">2+</option>
+                            <option value="3">3+</option>
+                            <option value="4">4+</option>
+                            <option value="5">5+</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="price-range">Price Range</label>
+                        <select id="price-range">
+                            <option value="">Any</option>
+                            <option value="100000-200000">$100,000 - $200,000</option>
+                            <option value="200000-300000">$200,000 - $300,000</option>
+                            <option value="300000-500000">$300,000 - $500,000</option>
+                            <option value="500000-1000000">$500,000 - $1,000,000</option>
+                            <option value="1000000+">$1,000,000+</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn">Search Properties</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Properties Listing -->
+    <section class="properties-listing">
+        <div class="container">
+            <h2>Available Properties for Sale</h2>
+            <div class="divider"></div>
+            
+            <div class="property-grid">
+                <!-- Property 1 -->
+                <div class="property-card" data-id="prop1">
+                    <div class="property-image">
+                        <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1475&q=80" alt="Luxury Villa">
+                        <div class="property-tag">For Sale</div>
+                    </div>
+                    <div class="property-details">
+                        <h3>Luxury Villa with Pool</h3>
+                        <p class="property-location"><i class="fas fa-map-marker-alt"></i> Makerere Hill Road</p>
+                        <p class="property-price">$450,000</p>
+                        <div class="property-features">
+                            <span><i class="fas fa-bed"></i> 4 Beds</span>
+                            <span><i class="fas fa-bath"></i> 3 Baths</span>
+                            <span><i class="fas fa-ruler-combined"></i> 3200 sqft</span>
+                        </div>
+                        <a href="#" class="btn-secondary view-property">View Details</a>
+                    </div>
+                </div>
+                
+                <!-- Property 2 -->
+                <div class="property-card" data-id="prop2">
+                    <div class="property-image">
+                        <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Family Home">
+                        <div class="property-tag">For Sale</div>
+                    </div>
+                    <div class="property-details">
+                        <h3>Spacious Family Home</h3>
+                        <p class="property-location"><i class="fas fa-map-marker-alt"></i> Makerere University Road</p>
+                        <p class="property-price">$320,000</p>
+                        <div class="property-features">
+                            <span><i class="fas fa-bed"></i> 3 Beds</span>
+                            <span><i class="fas fa-bath"></i> 2 Baths</span>
+                            <span><i class="fas fa-ruler-combined"></i> 2400 sqft</span>
+                        </div>
+                        <a href="#" class="btn-secondary view-property">View Details</a>
+                    </div>
+                </div>
+                
+                <!-- Property 3 -->
+                <div class="property-card" data-id="prop3">
+                    <div class="property-image">
+                        <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Modern Home">
+                        <div class="property-tag">For Sale</div>
+                    </div>
+                    <div class="property-details">
+                        <h3>Modern Architectural Home</h3>
+                        <p class="property-location"><i class="fas fa-map-marker-alt"></i> Kololo Heights</p>
+                        <p class="property-price">$580,000</p>
+                        <div class="property-features">
+                            <span><i class="fas fa-bed"></i> 5 Beds</span>
+                            <span><i class="fas fa-bath"></i> 4 Baths</span>
+                            <span><i class="fas fa-ruler-combined"></i> 4100 sqft</span>
+                        </div>
+                        <a href="#" class="btn-secondary view-property">View Details</a>
+                    </div>
+                </div>
+                
+                <!-- Property 4 -->
+                <div class="property-card" data-id="prop4">
+                    <div class="property-image">
+                        <img src="https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Suburban House">
+                        <div class="property-tag">For Sale</div>
+                    </div>
+                    <div class="property-details">
+                        <h3>Charming Suburban House</h3>
+                        <p class="property-location"><i class="fas fa-map-marker-alt"></i> Ntinda Residential Area</p>
+                        <p class="property-price">$275,000</p>
+                        <div class="property-features">
+                            <span><i class="fas fa-bed"></i> 3 Beds</span>
+                            <span><i class="fas fa-bath"></i> 2 Baths</span>
+                            <span><i class="fas fa-ruler-combined"></i> 1800 sqft</span>
+                        </div>
+                        <a href="#" class="btn-secondary view-property">View Details</a>
+                    </div>
+                </div>
+                
+                <!-- Property 5 -->
+                <div class="property-card" data-id="prop5">
+                    <div class="property-image">
+                        <img src="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Countryside Home">
+                        <div class="property-tag">For Sale</div>
+                    </div>
+                    <div class="property-details">
+                        <h3>Countryside Retreat</h3>
+                        <p class="property-location"><i class="fas fa-map-marker-alt"></i> Entebbe Road</p>
+                        <p class="property-price">$390,000</p>
+                        <div class="property-features">
+                            <span><i class="fas fa-bed"></i> 4 Beds</span>
+                            <span><i class="fas fa-bath"></i> 3 Baths</span>
+                            <span><i class="fas fa-ruler-combined"></i> 2800 sqft</span>
+                        </div>
+                        <a href="#" class="btn-secondary view-property">View Details</a>
+                    </div>
+                </div>
+                
+                <!-- Property 6 -->
+                <div class="property-card" data-id="prop6">
+                    <div class="property-image">
+                        <img src="https://images.unsplash.com/photo-1600585154526-990dced4db0d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Luxury Condo">
+                        <div class="property-tag">For Sale</div>
+                    </div>
+                    <div class="property-details">
+                        <h3>Luxury Condominium</h3>
+                        <p class="property-location"><i class="fas fa-map-marker-alt"></i> Downtown Kampala</p>
+                        <p class="property-price">$420,000</p>
+                        <div class="property-features">
+                            <span><i class="fas fa-bed"></i> 3 Beds</span>
+                            <span><i class="fas fa-bath"></i> 3 Baths</span>
+                            <span><i class="fas fa-ruler-combined"></i> 2200 sqft</span>
+                        </div>
+                        <a href="#" class="btn-secondary view-property">View Details</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Pagination -->
+            <div class="pagination">
+                <a href="#" class="active">1</a>
+                <a href="#">2</a>
+                <a href="#">3</a>
+                <a href="#">4</a>
+                <a href="#"><i class="fas fa-chevron-right"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Property Modal -->
+    <div class="property-modal" id="propertyModal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="modal-body">
+                <div class="property-slider">
+                    <div class="property-slide active">
+                        <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1475&q=80" alt="Property Image 1">
+                    </div>
+                    <div class="property-slide">
+                        <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Property Image 2">
+                    </div>
+                    <div class="property-slide">
+                        <img src="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Property Image 3">
+                    </div>
+                    <button class="prev-slide"><i class="fas fa-chevron-left"></i></button>
+                    <button class="next-slide"><i class="fas fa-chevron-right"></i></button>
+                </div>
+                <div class="property-info">
+                    <h2 id="modalPropertyTitle">Luxury Villa with Pool</h2>
+                    <p class="property-address" id="modalPropertyAddress"><i class="fas fa-map-marker-alt"></i> Makerere Hill Road, Kampala, Uganda</p>
+                    <p class="property-price" id="modalPropertyPrice">$450,000</p>
+                    
+                    <div class="property-details-grid">
+                        <div class="detail-item">
+                            <i class="fas fa-bed"></i>
+                            <span>Bedrooms</span>
+                            <p id="modalBedrooms">4</p>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-bath"></i>
+                            <span>Bathrooms</span>
+                            <p id="modalBathrooms">3</p>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-ruler-combined"></i>
+                            <span>Area</span>
+                            <p id="modalArea">3200 sqft</p>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-car"></i>
+                            <span>Garage</span>
+                            <p id="modalGarage">2 Cars</p>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-calendar-alt"></i>
+                            <span>Year Built</span>
+                            <p id="modalYearBuilt">2020</p>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-building"></i>
+                            <span>Property Type</span>
+                            <p id="modalPropertyType">Villa</p>
+                        </div>
+                    </div>
+                    
+                    <div class="property-description">
+                        <h3>Description</h3>
+                        <p id="modalDescription">This stunning luxury villa offers spacious living areas with high ceilings and abundant natural light. The property features a large swimming pool, landscaped gardens, and a modern kitchen with high-end appliances. Located in a prestigious neighborhood in Makerere, this home offers privacy and convenience with easy access to schools, shopping centers, and the university.</p>
+                    </div>
+                    
+                    <div class="property-features-list">
+                        <h3>Features</h3>
+                        <ul id="modalFeaturesList">
+                            <li><i class="fas fa-check"></i> Swimming Pool</li>
+                            <li><i class="fas fa-check"></i> Garden</li>
+                            <li><i class="fas fa-check"></i> Security System</li>
+                            <li><i class="fas fa-check"></i> Air Conditioning</li>
+                            <li><i class="fas fa-check"></i> Modern Kitchen</li>
+                            <li><i class="fas fa-check"></i> High Ceilings</li>
+                            <li><i class="fas fa-check"></i> Marble Floors</li>
+                            <li><i class="fas fa-check"></i> Backup Generator</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="property-contact">
+                        <h3>Interested in this property?</h3>
+                        <a href="contact.html" class="btn">Contact Agent</a>
+                        <a href="#" class="btn-secondary">Schedule Viewing</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Call to Action -->
+    <section class="cta">
+        <div class="container">
+            <h2>Can't Find What You're Looking For?</h2>
+            <p>Let us help you find the perfect property that meets all your requirements.</p>
+            <a href="contact.html" class="btn">Contact Our Agents</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>Blossom Estates</h3>
+                <p>Your trusted real estate partner in Makerere, Uganda. We help you find, sell, or rent properties with ease and confidence.</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="buy.html">Buy</a></li>
+                    <li><a href="sell.html">Sell</a></li>
+                    <li><a href="rent.html">Rent</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Info</h3>
+                <p><i class="fas fa-map-marker-alt"></i> 123 Makerere Hill Road, Kampala, Uganda</p>
+                <p><i class="fas fa-phone"></i> +256 700 123 456</p>
+                <p><i class="fas fa-envelope"></i> info@blossomestates.com</p>
+                <p><i class="fas fa-clock"></i> Mon-Fri: 8:30AM - 6:00PM</p>
+            </div>
+            <div class="footer-section">
+                <h3>Newsletter</h3>
+                <p>Subscribe to our newsletter for the latest property updates.</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Your Email Address" required>
+                    <button type="submit" class="btn-submit">Subscribe</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 Blossom Estates. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
+

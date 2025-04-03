@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rental Properties - Blossom Estates</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/1670/1670080.png">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="logo">
+            <h1>Blossom Estates</h1>
+        </div>
+        <div class="nav-links">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="buy.html">Buy</a></li>
+                <li><a href="sell.html">Sell</a></li>
+                <li><a href="rent.html" class="active">Rent</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Rental Properties</h1>
+            <p>Find your perfect rental home in Makerere and surrounding areas</p>
+        </div>
+    </section>
+
+    <!-- Property Search -->
+    <section class="property-search">
+        <div class="container">
+            <div class="search-container">
+                <form class="search-form">
+                    <div class="form-group">
+                        <label for="location">Location</label>
+                        <select id="location">
+                            <option value="">All Locations</option>
+                            <option value="makerere">Makerere</option>
+                            <option value="kampala">Kampala</option>
+                            <option value="entebbe">Entebbe</option>
+                            <option value="jinja">Jinja</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="property-type">Property Type</label>
+                        <select id="property-type">
+                            <option value="">All Types</option>
+                            <option value="house">House</option>
+                            <option value="apartment">Apartment</option>
+                            <option value="villa">Villa</option>
+                            <option value="studio">Studio</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="bedrooms">Bedrooms</label>
+                        <select id="bedrooms">
+                            <option value="">Any</option>
+                            <option value="1">1+</option>
+                            <option value="2">2+</option>
+                            <option value="3">3+</option>
+                            <option value="4">4+</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="price-range">Monthly Rent</label>
+                        <select id="price-range">
+                            <option value="">Any</option>
+                            <option value="500-1000">$500 - $1,000</option>
+                            <option value="1000-1500">$1,000 - $1,500</option>
+                            <option value="1500-2000">$1,500 - $2,000</option>
+                            <option value="2000-3000">$2,000 - $3,000</option>
+                            <option value="3000+">$3,000+</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn">Search Properties</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Properties Listing -->
+    <section class="properties-listing">
+        <div class="container">
+            <h2>Available Rental Properties</h2>
+            <div class="divider"></div>
+            
+            <div class="property-grid">
+                <!-- Property 1 -->
+                <div class="property-card" data-id="rent1">
+                    <div class="property-image">
+                        <img src="https://images.unsplash.com/photo-1605276374104-dee2a0ed3cd6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Modern Apartment">
+                        <div class="property-tag">For Rent</div>
+                    </div>
+                    <div class="property-details">
+                        <h3>Modern City Apartment</h3>
+                        <p class="property-location"><i class="fas fa-map-marker-alt"></i> Central Makerere</p>
+                        <p class="property-price">$1,200/month</p>
+                        <div class="property-features">
+                            <span><i class="fas fa-bed"></i> 2 Beds</span>
+                            <span><i class="fas fa-bath"></i> 2 Baths</span>
+                            <span><i class="fas fa-ruler-combined"></i> 1100 sqft</span>
+                        </div>
+                        <a href="#" class="btn-secondary view-property">View Details</a>
+                    </div>
+                </div>
+                
+                <!-- Property 2 -->
+                <div class="property-card" data-id="rent2">
+                    <div class="property-image">
+                        <img src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Luxury Apartment">
+                        <div class="property-tag">For Rent</div>
+                    </div>
+                    <div class="property-details">
+                        <h3>Luxury Serviced Apartment</h3>
+                        <p class="property-location"><i class="fas fa-map-marker-alt"></i> Kololo Heights</p>
+                        <p class="property-price">$2,500/month</p>
+                        <div class="property-features">
+                            <span><i class="fas fa-bed"></i> 3 Beds</span>
+                            <span><i class="fas fa-bath"></i> 3 Baths</span>
+                            <span><i class="fas fa-ruler-combined"></i> 1800 sqft</span>
+                        </div>
+                        <a href="#" class="btn-secondary view-property">View Details</a>
+                    </div>
+                </div>
+                
+                <!-- Property 3 -->
+                <div class="property-card" data-id="rent3">
+                    <div class="property-image">
+                        <img src="https://images.unsplash.com/photo-1574362848149-11496d93a7c7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Studio Apartment">
+                        <div class="property-tag">For Rent</div>
+                    </div>
+                    <div class="property-details">
+                        <h3>Cozy Studio Apartment</h3>
+                        <p class="property-location"><i class="fas fa-map-marker-alt"></i> Near Makerere University</p>
+                        <p class="property-price">$650/month</p>
+                        <div class="property-features">
+                            <span><i class="fas fa-bed"></i> 1 Bed</span>
+                            <span><i class="fas fa-bath"></i> 1 Bath</span>
+                            <span><i class="fas fa-ruler-combined"></i> 550 sqft</span>
+                        </div>
+                        <a href="#" class="btn-secondary view-property">View Details</a>
+                    </div>
+                </div>
+                
+                <!-- Property 4 -->
+                <div class="property-card" data-id="rent4">
+                    <div class="property-image">
+                        <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Family Home">
+                        <div class="property-tag">For Rent</div>
+                    </div>
+                    <div class="property-details">
+                        <h3>Spacious Family Home</h3>
+                        <p class="property-location"><i class="fas fa-map-marker-alt"></i> Makerere Hill Road</p>
+                        <p class="property-price">$1,800/month</p>
+                        <div class="property-features">
+                            <span><i class="fas fa-bed"></i> 4 Beds</span>
+                            <span><i class="fas fa-bath"></i> 3 Baths</span>
+                            <span><i class="fas fa-ruler-combined"></i> 2400 sqft</span>
+                        </div>
+                        <a href="#" class="btn-secondary view-property">View Details</a>
+                    </div>
+                </div>
+                
+                <!-- Property 5 -->
+                <div class="property-card" data-id="rent5">
+                    <div class="property-image">
+                        <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Townhouse">
+                        <div class="property-tag">For Rent</div>
+                    </div>
+                    <div class="property-details">
+                        <h3>Modern Townhouse</h3>
+                        <p class="property-location"><i class="fas fa-map-marker-alt"></i> Ntinda Residential Area</p>
+                        <p class="property-price">$1,500/month</p>
+                        <div class="property-features">
+                            <span><i class="fas fa-bed"></i> 3 Beds</span>
+                            <span><i class="fas fa-bath"></i> 2.5 Baths</span>
+                            <span><i class="fas fa-ruler-combined"></i> 1800 sqft</span>
+                        </div>
+                        <a href="#" class="btn-secondary view-property">View Details</a>
+                    </div>
+                </div>
+                
+                <!-- Property 6 -->
+                <div class="property-card" data-id="rent6">
+                    <div class="property-image">
+                        <img src="https://images.unsplash.com/photo-1600566753376-12c8ab8e17a9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Luxury Villa">
+                        <div class="property-tag">For Rent</div>
+                    </div>
+                    <div class="property-details">
+                        <h3>Executive Villa with Pool</h3>
+                        <p class="property-location"><i class="fas fa-map-marker-alt"></i> Bugolobi</p>
+                        <p class="property-price">$3,500/month</p>
+                        <div class="property-features">
+                            <span><i class="fas fa-bed"></i> 5 Beds</span>
+                            <span><i class="fas fa-bath"></i> 4 Baths</span>
+                            <span><i class="fas fa-ruler-combined"></i> 4200 sqft</span>
+                        </div>
+                        <a href="#" class="btn-secondary view-property">View Details</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Pagination -->
+            <div class="pagination">
+                <a href="#" class="active">1</a>
+                <a href="#">2</a>
+                <a href="#">3</a>
+                <a href="#"><i class="fas fa-chevron-right"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Property Modal -->
+    <div class="property-modal" id="propertyModal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="modal-body">
+                <div class="property-slider">
+                    <div class="property-slide active">
+                        <img src="https://images.unsplash.com/photo-1605276374104-dee2a0ed3cd6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Property Image 1">
+                    </div>
+                    <div class="property-slide">
+                        <img src="https://images.unsplash.com/photo-1560185007-5f0bb1866cab?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Property Image 2">
+                    </div>
+                    <div class="property-slide">
+                        <img src="https://images.unsplash.com/photo-1560185008-b033106af5c3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Property Image 3">
+                    </div>
+                    <button class="prev-slide"><i class="fas fa-chevron-left"></i></button>
+                    <button class="next-slide"><i class="fas fa-chevron-right"></i></button>
+                </div>
+                <div class="property-info">
+                    <h2 id="modalPropertyTitle">Modern City Apartment</h2>
+                    <p class="property-address" id="modalPropertyAddress"><i class="fas fa-map-marker-alt"></i> Central Makerere, Kampala, Uganda</p>
+                    <p class="property-price" id="modalPropertyPrice">$1,200/month</p>
+                    
+                    <div class="property-details-grid">
+                        <div class="detail-item">
+                            <i class="fas fa-bed"></i>
+                            <span>Bedrooms</span>
+                            <p id="modalBedrooms">2</p>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-bath"></i>
+                            <span>Bathrooms</span>
+                            <p id="modalBathrooms">2</p>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-ruler-combined"></i>
+                            <span>Area</span>
+                            <p id="modalArea">1100 sqft</p>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-car"></i>
+                            <span>Parking</span>
+                            <p id="modalParking">1 Space</p>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-calendar-alt"></i>
+                            <span>Available From</span>
+                            <p id="modalAvailableDate">Immediate</p>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-building"></i>
+                            <span>Property Type</span>
+                            <p id="modalPropertyType">Apartment</p>
+                        </div>
+                    </div>
+                    
+                    <div class="property-description">
+                        <h3>Description</h3>
+                        <p id="modalDescription">This modern apartment in the heart of Makerere offers contemporary living with all amenities. The property features an open-plan living area, fully equipped kitchen, and a private balcony with city views. Located within walking distance to Makerere University, shops, restaurants, and public transportation.</p>
+                    </div>
+                    
+                    <div class="property-features-list">
+                        <h3>Features & Amenities</h3>
+                        <ul id="modalFeaturesList">
+                            <li><i class="fas fa-check"></i> Air Conditioning</li>
+                            <li><i class="fas fa-check"></i> Fully Furnished</li>
+                            <li><i class="fas fa-check"></i> 24/7 Security</li>
+                            <li><i class="fas fa-check"></i> High-Speed Internet</li>
+                            <li><i class="fas fa-check"></i> Modern Kitchen</li>
+                            <li><i class="fas fa-check"></i> Balcony</li>
+                            <li><i class="fas fa-check"></i> Gym Access</li>
+                            <li><i class="fas fa-check"></i> Backup Generator</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="property-contact">
+                        <h3>Interested in this property?</h3>
+                        <a href="contact.html" class="btn">Contact Agent</a>
+                        <a href="#" class="btn-secondary">Schedule Viewing</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Rental Guide -->
+        <section class="rental-guide">
+        <div class="container">
+            <h2>Rental Guide</h2>
+            <div class="divider"></div>
+            <div class="guide-content">
+                <div class="guide-text">
+                    <h3>Renting in Makerere: What You Need to Know</h3>
+                    <p>Whether you're a student, professional, or family looking for a rental property in Makerere, our comprehensive guide will help you navigate the rental process with ease.</p>
+                    
+                    <div class="guide-steps">
+                        <div class="guide-step">
+                            <div class="step-number">1</div>
+                            <div class="step-content">
+                                <h4>Determine Your Budget</h4>
+                                <p>Consider all costs including rent, utilities, security deposit, and potential maintenance fees. As a general rule, your rent should not exceed 30% of your monthly income.</p>
+                            </div>
+                        </div>
+                        <div class="guide-step">
+                            <div class="step-number">2</div>
+                            <div class="step-content">
+                                <h4>Choose the Right Location</h4>
+                                <p>Consider proximity to your workplace or university, access to public transportation, safety of the neighborhood, and nearby amenities like shops and restaurants.</p>
+                            </div>
+                        </div>
+                        <div class="guide-step">
+                            <div class="step-number">3</div>
+                            <div class="step-content">
+                                <h4>Property Viewing</h4>
+                                <p>Schedule viewings for multiple properties to compare options. Check for proper maintenance, security features, water supply, and electrical systems during your visit.</p>
+                            </div>
+                        </div>
+                        <div class="guide-step">
+                            <div class="step-number">4</div>
+                            <div class="step-content">
+                                <h4>Understand the Lease Agreement</h4>
+                                <p>Carefully review the lease terms including rent amount, payment schedule, lease duration, security deposit, maintenance responsibilities, and termination conditions.</p>
+                            </div>
+                        </div>
+                        <div class="guide-step">
+                            <div class="step-number">5</div>
+                            <div class="step-content">
+                                <h4>Document Property Condition</h4>
+                                <p>Before moving in, document the condition of the property with photos and a written inventory to avoid disputes when moving out.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <a href="#" class="btn">Download Complete Rental Guide</a>
+                </div>
+                <div class="guide-image">
+                    <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1073&q=80" alt="Rental Guide">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tenant Services -->
+    <section class="tenant-services">
+        <div class="container">
+            <h2>Our Tenant Services</h2>
+            <div class="divider"></div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <i class="fas fa-search"></i>
+                    <h3>Property Matching</h3>
+                    <p>Our team will help you find rental properties that match your specific requirements and preferences.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-file-contract"></i>
+                    <h3>Lease Assistance</h3>
+                    <p>We provide guidance on lease agreements and ensure all terms are fair and clearly understood.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-home"></i>
+                    <h3>Property Viewings</h3>
+                    <p>Schedule convenient property viewings with our agents who will answer all your questions.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-tools"></i>
+                    <h3>Maintenance Support</h3>
+                    <p>For properties under our management, we offer prompt maintenance and repair services.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-shield-alt"></i>
+                    <h3>Security Vetting</h3>
+                    <p>All our rental properties undergo security assessments to ensure tenant safety.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-handshake"></i>
+                    <h3>Landlord Mediation</h3>
+                    <p>We act as intermediaries between tenants and landlords to resolve any issues that may arise.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials">
+        <div class="container">
+            <h2>What Our Tenants Say</h2>
+            <div class="divider"></div>
+            <div class="testimonial-slider">
+                <div class="testimonial active">
+                    <div class="testimonial-content">
+                        <p>"Blossom Estates made finding a rental property near Makerere University so easy. Their team was professional and found me the perfect apartment within my budget in just a week."</p>
+                        <div class="client-info">
+                            <h4>Sarah Nakato</h4>
+                            <p>Graduate Student</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <div class="testimonial-content">
+                        <p>"As an expatriate moving to Kampala, I was worried about finding a suitable home. The team at Blossom Estates understood my needs and found me a beautiful property with all the amenities I requested."</p>
+                        <div class="client-info">
+                            <h4>Michael Johnson</h4>
+                            <p>Business Professional</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <div class="testimonial-content">
+                        <p>"The maintenance support provided by Blossom Estates for our rental home has been exceptional. Any issues are addressed promptly, making our renting experience stress-free."</p>
+                        <div class="client-info">
+                            <h4>Daniel and Rebecca Ochieng</h4>
+                            <p>Family Tenants</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-dots">
+                <span class="dot active"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <h2>Frequently Asked Questions</h2>
+            <div class="divider"></div>
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>What documents do I need to rent a property?</h3>
+                        <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Typically, you'll need identification documents (national ID or passport), proof of income (employment letter or bank statements), references from previous landlords, and sometimes a guarantor depending on the property value.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>How much is the security deposit?</h3>
+                        <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Security deposits in Makerere typically range from one to three months' rent, depending on the property type and landlord requirements. This deposit is refundable at the end of your lease, subject to property condition.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Are utilities included in the rent?</h3>
+                        <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>This varies by property. Some rentals include certain utilities like water or security services, while others require tenants to pay for all utilities separately. Each property listing specifies what is included in the rent.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Can I make modifications to the rental property?</h3>
+                        <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Minor decorative changes like hanging pictures are usually permitted, but significant modifications require written permission from the landlord. Always check your lease agreement and consult with your property manager before making changes.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>What is the typical lease duration?</h3>
+                        <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Most residential leases in Makerere are for 12 months, though some landlords offer 6-month or 24-month options. Short-term rentals (1-3 months) are also available but typically at a premium rate.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="cta">
+        <div class="container">
+            <h2>Ready to Find Your Perfect Rental?</h2>
+            <p>Contact our rental specialists today to start your search.</p>
+            <a href="contact.html" class="btn">Contact Us Now</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>Blossom Estates</h3>
+                <p>Your trusted real estate partner in Makerere, Uganda. We help you find, sell, or rent properties with ease and confidence.</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="buy.html">Buy</a></li>
+                    <li><a href="sell.html">Sell</a></li>
+                    <li><a href="rent.html">Rent</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Info</h3>
+                <p><i class="fas fa-map-marker-alt"></i> 123 Makerere Hill Road, Kampala, Uganda</p>
+                <p><i class="fas fa-phone"></i> +256 700 123 456</p>
+                <p><i class="fas fa-envelope"></i> info@blossomestates.com</p>
+                <p><i class="fas fa-clock"></i> Mon-Fri: 8:30AM - 6:00PM</p>
+            </div>
+            <div class="footer-section">
+                <h3>Newsletter</h3>
+                <p>Subscribe to our newsletter for the latest property updates.</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Your Email Address" required>
+                    <button type="submit" class="btn-submit">Subscribe</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 Blossom Estates. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
+
